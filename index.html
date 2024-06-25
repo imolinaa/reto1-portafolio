@@ -2,7 +2,8 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <!--<meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
     <title>Mascotas - Gatitos</title>
     <link rel="stylesheet" href="css/index.css">
     <link rel="stylesheet" href="css/fontawesome-free-5.15.4-web/css/all.min.css">
@@ -31,13 +32,26 @@
             <h2>Nuestros Gatitos</h2>
             <div class="gallery">
                 <picture>
-                    <source srcset="imgs/gato-naranja.webp" media="(max-width: 600px)">
-                    <source srcset="imgs/gato-naranja.webp" alt="Gatito naranja" width="300" height="200">
-                </picture>
-                <img src="imgs/gato-naranja.webp" alt="Gatito Naranja">
-                <img src="imgs/gato-negro.webp" alt="Gatito Negro">
-                <img src="imgs/gato-grisblanco.webp" alt="Gatito Gris y Blanco">
-                <img src="imgs/gato-gris.webp" alt="Gatito Gris">
+                    <source srcset="imgs/gato-naranja-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-naranja.webp">
+                    <img src="imgs/gato-naranja.webp" alt="Gatito Naranja" width="300" height="200"  loading="lazy">
+                 </picture>
+                 <picture>
+                    <source srcset="imgs/gato-negro-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-negro.webp">
+                    <img src="imgs/gato-negro.webp" alt="Gatito Negro" width="300" height="200"  loading="lazy">
+                 </picture>
+                 <picture>
+                    <source srcset="imgs/gato-grisblanco-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-grisblanco.webp">
+                    <img src="imgs/gato-grisblanco.webp" alt="Gatito Gris y Blanco" width="300" height="200"  loading="lazy">
+                 </picture>
+                 <picture>
+                    <source srcset="imgs/gato-gris-small.webp" media="(max-width: 600px)">
+                    <source srcset="imgs/gato-gris.webp">
+                    <img src="imgs/gato-gris.webp" alt="Gatito Gris" width="300" height="200"  loading="lazy">
+                 </picture>
+
             </div>
         </section>
 
@@ -68,14 +82,35 @@
         <!-- Sección con GIFs animados de gatitos -->
         <section class="gif-gallery">
             <picture>
-                <source srcset="imgs/">
-            </picture>
-            <img src="https://media.giphy.com/media/JIX9t2j0ZTN9S/giphy.gif" alt="Gatito GIF 1">
-            <img src="https://media.giphy.com/media/mlvseq9yvZhba/giphy.gif" alt="Gatito GIF 2">
-            <img src="https://media.giphy.com/media/3oriO0OEd9QIDdllqo/giphy.gif" alt="Gatito GIF 3">
-            <img src="https://media.giphy.com/media/lJNoBCvQYp7nq/giphy.gif" alt="Gatito GIF 4">
-            <img src="https://media.giphy.com/media/13borq7Zo2kulO/giphy.gif" alt="Gatito GIF 5">
-            <img src="https://media.giphy.com/media/VbnUQpnihPSIgIXuZv/giphy.gif" alt="Gatito GIF 6">
+                <source srcset="imgs/gift1y4-small.webp" media="(max-width: 600px)">
+                <source srcset="imgs/gift1y4.webp">
+                <img src="imgs/gift1y4.webp" alt="Gatito trabajador" width="300" height="200"  loading="lazy">
+             </picture>
+             <picture>
+                <source srcset="imgs/gift2-small.webp" media="(max-width: 600px)">
+                <source srcset="imgs/gift2.webp">
+                <img src="imgs/gift2.webp" alt="Gatito manicurista" width="300" height="200"  loading="lazy">
+             </picture>
+             <picture>
+                <source srcset="imgs/gift3-small.webp" media="(max-width: 600px)">
+                <source srcset="imgs/gift3.webp">
+                <img src="imgs/gift3.webp" alt="Gatito asustado" width="300" height="200"  loading="lazy">
+             </picture>
+             <picture>
+                <source srcset="imgs/gift1y4-small.webp" media="(max-width: 600px)">
+                <source srcset="imgs/gift1y4.webp">
+                <img src="imgs/gift1y4.webp" alt="Gatito trabajador" width="300" height="200"  loading="lazy">
+             </picture>
+             <picture>
+                <source srcset="imgs/gift5-small.webp" media="(max-width: 600px)">
+                <source srcset="imgs/gift5.webp">
+                <img src="imgs/gift5.webp" alt="Gatito limpiador" width="300" height="200"  loading="lazy">
+             </picture>
+             <picture>
+                <source srcset="imgs/gift6-small.webp" media="(max-width: 600px)">
+                <source srcset="imgs/gift6.webp">
+                <img src="imgs/gift6.webp" alt="Gatito estudioso" width="300" height="200"  loading="lazy">
+             </picture>
         </section>
     </main>
 
@@ -83,12 +118,22 @@
         <p>&copy; 2024 Gatitos Encantadores</p>
         <p>Todos los derechos reservados.</p>
     </footer>
-    <!-- Mala práctica: Cargar múltiples librerías de JavaScript desde CDN -->
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     
-    <!-- Mala práctica: Imágenes sin tamaño especificado -->
-    <img id="gatoFinal" src="imgs/gato-naranja.webp" alt="Gatito sin tamaño">
+    <!-- Mala práctica: Cargar múltiples librerías de JavaScript desde CDN -->
+     <link rel="preconnect" href="https://code.jquery.com/jquery-3.6.0.min.js">
+     <link rel="dns-prefetch" href="https://code.jquery.com/jquery-3.6.0.min.js">
+
+     <link rel="preconnect" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js">
+     <link rel="dns-prefetch" href="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.11.6/umd/popper.min.js">
+    
+     <link rel="preconnect" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+     <link rel="dns-prefetch" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js">
+ 
+    
+    <picture class="gatoFinal">
+        <source srcset="imgs/gato-naranja-small.webp" media="(max-width: 600px)">
+        <source srcset="imgs/gato-naranja.webp">
+        <img src="imgs/gato-naranja.webp" alt="Gatito tamaño arreglado" width="300" height="200"  loading="lazy">
+    </picture>
 </body>
 </html>
